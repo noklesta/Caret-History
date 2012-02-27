@@ -23,7 +23,7 @@ The recommmended method of installation is via Package Control. It will download
 
 Go to your Sublime Text 2 Packages directory and clone the repository using the command below:
 
-    git clone https://github.com/SublimeText/Caret-History "Caret History"
+    git clone https://github.com/crazycooder/Caret-History "Caret History"
 
 ### Download Manually ###
 
