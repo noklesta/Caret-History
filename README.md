@@ -34,5 +34,5 @@ Go to your Sublime Text 2 Packages directory and clone the repository using the 
 Changelog
 ---------
 
-### 1.0.1 ###
+### 1.0.0 ###
  * Initial release
