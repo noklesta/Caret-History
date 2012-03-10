@@ -16,21 +16,30 @@ class Caret(sublime.Region):
         self.view = view
         self.file = self.get_file()
         self.line = self.get_line()
+        self.coln = self.get_column()
+        #print self
 
     def __getitem__(self):
-        return (self.file, self.line)
+        return (self.file, self.line, self.coln)
 
     def __repr__(self):
-        return "(%s, %s)" % (self.get_filename(), self.line)
+        return "%s: (%s, %s)" % (self.file, self.line, self.coln)
 
     def __eq__(self, other):
-        return 1 if self.file == other.file and self.line == other.line else 0
+        if self.file == other.file:
+            if self.line == other.line:
+                if self.coln == other.coln:
+                    return 1
+        return 0
 
     def __ne__(self, other):
         return 0 if self == other else 1
 
     def get_line(self):
         return self.view.rowcol(self.begin())[0] + 1
+
+    def get_column(self):
+        return self.view.rowcol(self.end())[1] + 1
 
     def get_file(self):
         return self.view.file_name()
@@ -144,7 +153,8 @@ class CaretHistoryCommand(sublime_plugin.TextCommand):
         self.open_file(caret)
 
     def open_file(self, caret):
-        file = "%s:%d" % (caret.file, caret.line)
+        print caret
+        file = "%s:%d:%d" % (caret.file, caret.line, caret.coln)
         if self.view.window():
             self.view.window().open_file(file, sublime.ENCODED_POSITION)
 
