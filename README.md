@@ -23,7 +23,7 @@ The recommmended method of installation is via Package Control. It will download
 
 Go to your Sublime Text 2 Packages directory and clone the repository using the command below:
 
-    git clone https://github.com/crazycooder/Caret-History "Caret History"
+    git clone https://github.com/SublimeText/Caret-History "Caret History"
 
 ### Download Manually ###
 
@@ -33,6 +33,9 @@ Go to your Sublime Text 2 Packages directory and clone the repository using the 
 
 Changelog
 ---------
+
+### 1.0.1 ###
+ * Column, in addition to line is now retored when you're going backward/forward
 
 ### 1.0.0 ###
  * Initial release
