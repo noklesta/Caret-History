@@ -1,4 +1,4 @@
 Goto Symbol 1.0.1 Changelog:
 
 New Features
-    * Column, in addition to line is now retored when you're going backward/forward.
+    * Column, in addition to line is now restored when you're going backward/forward.

@@ -35,7 +35,7 @@ Changelog
 ---------
 
 ### 1.0.1 ###
- * Column, in addition to line is now retored when you're going backward/forward
+ * Column, in addition to line is now restored when you're going backward/forward
 
 ### 1.0.0 ###
  * Initial release
