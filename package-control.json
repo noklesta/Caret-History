@@ -1,0 +1,20 @@
+{
+    "schema_version": "1.0",
+    "packages": [
+        {
+            "name": "Caret History",
+            "description": "This plugin add a command to Sublime Text 2, allowing you to go backward/forward where your caret were before.",
+            "author": "Crazycooder",
+            "homepage": "https://github.com/crazycooder/Caret-History",
+            "last_modified": "2012-03-10 20:00:00",
+            "platforms": {
+                "*": [
+                    {
+                        "version": "1.0.1",
+                        "url": "https://nodeload.github.com/crazycooder/Caret-History/zipball/master"
+                    }
+                ]
+            }
+        }
+    ]
+}
