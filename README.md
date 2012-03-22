@@ -34,6 +34,10 @@ Go to your Sublime Text 2 Packages directory and clone the repository using the 
 Changelog
 ---------
 
+### 1.0.2 ###
+ * Just the last caret position by line is now restored when you're going backward/forward
+ * Updated bindings for Max OS X
+
 ### 1.0.1 ###
  * Column, in addition to line is now restored when you're going backward/forward
 

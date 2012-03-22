@@ -1,0 +1,5 @@
+Goto Symbol 1.0.1 Changelog:
+
+Issues
+    * Just the last caret position by line is now restored when you're going backward/forward
+    * Updated bindings for Max OS X
