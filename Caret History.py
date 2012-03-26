@@ -120,7 +120,7 @@ class CaretList(UserList.UserList):
         if not len(self.data):
             self.data.append(caret)
         elif caret not in [self.get_current(), self.get_last(), self.get_previous(), self.get_next()]:
-            if self.get_last().line == caret.line:
+            if abs(self.get_last().line - caret.line) < 2:
                 self.data.pop()
             self.data.append(caret)
             self.truncate()
